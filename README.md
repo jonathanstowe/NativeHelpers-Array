@@ -28,14 +28,10 @@ Other install mechanisms may be become available in the future.
 
 ## Support
 
-This should be considered experimental software until such time that
-Perl 6 reaches an official release.  However suggestions/patches are
-welcomed via github at
-
-https://github.com/jonathanstowe/NativeHelpers-Array/issues
+Suggestions/patches are welcomed via github at https://github.com/jonathanstowe/NativeHelpers-Array/issues
 
 ## Licence
 
 Please see the [LICENCE](LICENCE) file in the distribution
 
-© Jonathan Stowe 2015, 2016, 2017
+© Jonathan Stowe 2015, 2016, 2017, 2019
