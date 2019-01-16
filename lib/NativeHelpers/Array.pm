@@ -20,7 +20,7 @@ complicated but it saves having to have the same code in multiple modules.
 
 Copy the array to the new CArray typed as per C<$type>. If the supplied type
 is not a valid native type there will be an exception.  If the elements of the
-array are out of range for the type then the values in the CArray may be 
+array are out of range for the type then the values in the CArray may be
 truncated.
 
 =head2 sub copy-to-array
@@ -48,25 +48,25 @@ module NativeHelpers::Array {
 
     use NativeCall;
 
-    sub copy-to-carray(@items, Mu $type) returns CArray is export {
+    sub copy-to-carray(@items, Mu $type --> CArray ) is export {
         my $array = CArray[$type].new;
         $array[$_] = @items[$_] for ^@items.elems;
         $array;
     }
 
-    sub copy-to-array(CArray $carray, Int $items) returns Array is export {
+    sub copy-to-array(CArray $carray, Int $items --> Array ) is export {
         my @array;
         @array[$_] = $carray[$_] for ^$items;
         @array;
     }
 
-    sub copy-buf-to-carray(Buf $buf) returns CArray[uint8] is export {
+    sub copy-buf-to-carray(Buf $buf --> CArray[uint8] ) is export {
         my $carray = CArray[uint8].new;
         $carray[$_] = $buf[$_] for ^$buf.elems;
         $carray;
     }
 
-    sub copy-carray-to-buf(CArray $array, Int $no-elems) returns Buf is export {
+    sub copy-carray-to-buf(CArray $array, Int $no-elems --> Buf ) is export {
         my $buf = Buf.new;
         $buf[$_] = $array[$_] for ^$no-elems;
         $buf;
