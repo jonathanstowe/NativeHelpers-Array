@@ -1,8 +1,8 @@
 # NativeHelpers::Array
 
-Helper subroutines for working with Perl6 Native Arrays (CArray)
+Helper subroutines for working with Raku Native Arrays (CArray)
 
-[![Build Status](https://travis-ci.org/jonathanstowe/NativeHelpers-Array.svg?branch=master)](https://travis-ci.org/jonathanstowe/NativeHelpers-Array)
+![Build Status](https://github.com/jonathanstowe/NativeHelpers-Array/workflows/CI/badge.svg)
 
 ## Description
 
@@ -15,8 +15,7 @@ into modules where they may be useful.
 
 ## Installation
 
-Assuming you have a working perl6 installation you should be able to
-install this with *zef* :
+Assuming you have a working raku installation you should be able to install this with *zef* :
 
     zef install .
 
@@ -32,6 +31,8 @@ Suggestions/patches are welcomed via github at https://github.com/jonathanstowe/
 
 ## Licence
 
-Please see the [LICENCE](LICENCE) file in the distribution
+This is free software.
 
-© Jonathan Stowe 2015, 2016, 2017, 2019
+Please see the [LICENCE](LICENCE) file in the distribution for details.
+
+© Jonathan Stowe 2015 - 2021

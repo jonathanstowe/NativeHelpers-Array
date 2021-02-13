@@ -1,4 +1,4 @@
-#!perl6
+#!raku
 
 use v6;
 
@@ -39,4 +39,4 @@ sub compare-to-carray($array, CArray $carray) returns Bool {
 
 done-testing;
 
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku
