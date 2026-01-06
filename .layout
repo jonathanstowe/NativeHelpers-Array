@@ -38,7 +38,7 @@
           "children": [
             {
               "type": "file",
-              "name": "Array.pm"
+              "name": "Array.rakumod"
             }
           ],
           "type": "directory",

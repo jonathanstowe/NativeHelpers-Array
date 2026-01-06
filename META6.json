@@ -18,13 +18,13 @@
   "test-depends": [
   ],
   "description": "Helper subroutines for working with Raku Native Arrays (CArray)",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "support": {
     "bugtracker": "https://github.com/jonathanstowe/NativeHelpers-Array/issues",
     "source": "git://github.com/jonathanstowe/NativeHelpers-Array.git"
   },
   "provides": {
-    "NativeHelpers::Array": "lib/NativeHelpers/Array.pm"
+    "NativeHelpers::Array": "lib/NativeHelpers/Array.rakumod"
   },
   "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
   "tags": [
